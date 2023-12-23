@@ -1,3 +1,4 @@
+
 document.getElementById('login').addEventListener('submitlogin', function(event) {
     event.preventDefault(); // Prevent the form from submitting
   
@@ -10,7 +11,8 @@ document.getElementById('login').addEventListener('submitlogin', function(event)
     // Simulated user data (replace this with your actual user data)
     const users = [
       { username: 'user1', password: 'password1', gender: 'male' },
-      { username: 'user2', password: 'balaganesh2', gender : 'female' }
+
+      { username: 'user2', password: 'test@123', gender : 'female' }
     ];
   
     // Check if the entered username and password match any user in the 'users' array
