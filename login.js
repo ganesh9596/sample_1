@@ -1,5 +1,6 @@
-document.getElementById('loginview').addEventListener('submitData', function(event) {
-    event.preventDefault(null); // Prevent the form from submitting
+
+document.getElementById('login').addEventListener('submitlogin', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
   
     // Get input values
     const username = document.getElementById('username').value;
@@ -10,6 +11,7 @@ document.getElementById('loginview').addEventListener('submitData', function(eve
     // Simulated user data (replace this with your actual user data)
     const users = [
       { username: 'user1', password: 'password1', gender: 'male' },
+
       { username: 'user2', password: 'test@123', gender : 'female' }
     ];
   
@@ -18,11 +20,11 @@ document.getElementById('loginview').addEventListener('submitData', function(eve
   
     if (user) {
       // Authentication successful
-      document.getElementById('loginview').innerText = 'Login successful';
+      document.getElementById('login').innerText = 'Login successful';
       // You might redirect to another page or perform other actions here after successful login
     } else {
       // Authentication failed
-      document.getElementById('loginview').innerText = 'Invalid username or password';
+      document.getElementById('login').innerText = 'Invalid username or password';
     }
   });
 
