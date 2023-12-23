@@ -4,11 +4,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Get input values
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+    const confirm_password = document.getElementById('confirm_password').value;
+    const gender = document.getElementById('gender').value;
   
     // Simulated user data (replace this with your actual user data)
     const users = [
-      { username: 'user1', password: 'password1' },
-      { username: 'user2', password: 'password2' }
+      { username: 'user1', password: 'password1', gender: 'male' },
+      { username: 'user2', password: 'password2', gender : 'female' }
     ];
   
     // Check if the entered username and password match any user in the 'users' array
