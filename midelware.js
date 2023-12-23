@@ -10,6 +10,7 @@ const authenticate = (req, res, next) => {
     res.status(401).json({ message: 'Unauthorized' });
   }
 };
+console.log("test middleware");
 
 module.exports = {
   authenticate,
