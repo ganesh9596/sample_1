@@ -1,4 +1,4 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginview').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting
   
     // Get input values
@@ -16,11 +16,16 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   
     if (user) {
       // Authentication successful
-      document.getElementById('loginStatus').innerText = 'Login successful';
+      document.getElementById('loginview').innerText = 'Login successful';
       // You might redirect to another page or perform other actions here after successful login
     } else {
       // Authentication failed
-      document.getElementById('loginStatus').innerText = 'Invalid username or password';
+      document.getElementById('loginview').innerText = 'Invalid username or password';
     }
   });
-  
+
+   // Example usage:
+   const Username = 'user'; // Replace with the entered username
+   const Password = 'password'; // Replace with the entered password
+   
+   authenticate(Username, Password);
